@@ -34,6 +34,7 @@ const config: Config = {
             fontFamily: {
                 heading: ["var(--font-heading)", "ui-sans-serif", "system-ui", "sans-serif"],
                 mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
+                cursive: ["var(--font-cursive)", "cursive"],
             },
             boxShadow: {
                 "neo": "6px 6px 0px 0px #1A1A1A",

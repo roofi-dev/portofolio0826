@@ -766,3 +766,20 @@ body::before {
     display: none;
   }
 }
+
+/* ═══════════════════════════════════════════
+   LOADING SCREEN — zoom-in reveal
+   ═══════════════════════════════════════════ */
+
+/* While the loading cover is visible, scale the page content up slightly so
+   that when the panels split it zooms back to 1 — a subtle "zoom in" reveal. */
+body.is-loading main {
+  transform: scale(1.08);
+  transform-origin: center center;
+  transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+  will-change: transform;
+}
+
+body.is-loading-split main {
+  transform: scale(1);
+}
