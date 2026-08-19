@@ -8,10 +8,10 @@ export function ProcessSection() {
 
             <div className="grid md:grid-cols-4 gap-5">
                 {[
-                    { num: "01", title: "Brief", desc: "A 30-minute call to understand the product, users, and constraints. No slides, just questions.", color: "bg-acid", textColor: "text-ink" },
-                    { num: "02", title: "Build", desc: "Public repo from day one. You get a running preview URL and review every commit.", color: "bg-ink", textColor: "text-cream" },
-                    { num: "03", title: "Ship", desc: "Production deploy with CI/CD, monitoring, and domain setup. Real users, real feedback.", color: "bg-electric", textColor: "text-cream" },
-                    { num: "04", title: "Support", desc: "I stay on-call for bug fixes and tweaks after launch. No handoff to a stranger.", color: "bg-hotpink", textColor: "text-cream" },
+                    { num: "01", title: "Spec", desc: "Diskusi requirement, modul bisnis, dan constraint teknis. Tidak ada slide, hanya pertanyaan dan pemetaan.", color: "bg-acid", textColor: "text-ink" },
+                    { num: "02", title: "Build", desc: "Engineering dengan Laravel + Vue/React + Inertia.js. Anda lihat setiap commit dan preview URL.", color: "bg-ink", textColor: "text-cream" },
+                    { num: "03", title: "Deploy", desc: "Docker multi-VM, Nginx, deploy.sh automasi, security hardening. Produksi, bukan staging.", color: "bg-electric", textColor: "text-cream" },
+                    { num: "04", title: "Support", desc: "On-call untuk bug fix, tweak, dan rekonsiliasi data setelah go-live. Tidak ghosting.", color: "bg-hotpink", textColor: "text-cream" },
                 ].map((step, i) => (
                     <div key={step.num} className="reveal-up" style={{ animationDelay: `${Math.min(i * 0.06, 0.4)}s` }}>
                         <div className={`neo-card ${step.color} ${step.textColor} p-6 h-full relative overflow-hidden`}>

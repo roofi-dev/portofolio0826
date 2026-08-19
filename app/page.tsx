@@ -45,7 +45,7 @@ export default function Home() {
     const [konamiActive, setKonamiActive] = useState(false);
     useKonamiCode(() => setKonamiActive(true));
 
-    const topTags = ["Full-stack engineer", "iOS · SwiftUI", "Web · Next.js", "AI pipelines", "Remote worldwide"];
+    const topTags = ["Fullstack Web Developer", "PHP · Laravel", "Vue 3 · React 18", "MQTT · IoT", "Surabaya, Indonesia"];
 
     return (
         <div className={`min-h-screen bg-cream ${konamiActive ? "hue-rotate-180 transition-all duration-1000" : ""}`}>
@@ -96,14 +96,14 @@ export default function Home() {
                 <div className="marquee-container font-mono font-bold text-ink uppercase tracking-widest text-sm">
                     <div className="marquee-content animate-marquee-reverse">
                         <span className="px-6">Open for new work&nbsp;///&nbsp;</span>
-                        <span className="px-6">Contract &amp; freelance&nbsp;///&nbsp;</span>
-                        <span className="px-6">Remote worldwide&nbsp;///&nbsp;</span>
+                        <span className="px-6">Enterprise &amp; freelance&nbsp;///&nbsp;</span>
+                        <span className="px-6">Surabaya · Remote&nbsp;///&nbsp;</span>
                         <span className="px-6">Replies within a day&nbsp;///&nbsp;</span>
                     </div>
                     <div className="marquee-content animate-marquee-reverse" aria-hidden="true">
                         <span className="px-6">Open for new work&nbsp;///&nbsp;</span>
-                        <span className="px-6">Contract &amp; freelance&nbsp;///&nbsp;</span>
-                        <span className="px-6">Remote worldwide&nbsp;///&nbsp;</span>
+                        <span className="px-6">Enterprise &amp; freelance&nbsp;///&nbsp;</span>
+                        <span className="px-6">Surabaya · Remote&nbsp;///&nbsp;</span>
                         <span className="px-6">Replies within a day&nbsp;///&nbsp;</span>
                     </div>
                 </div>

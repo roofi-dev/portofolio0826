@@ -1,7 +1,7 @@
 "use client";
 
 import { CrossHatch, CircuitPattern } from "@/components/ui/Decorative";
-import { ArrowUpRight, Zap, Bot } from "lucide-react";
+import { ArrowUpRight, Zap, Cpu } from "lucide-react";
 
 export function ServicesSection() {
     return (
@@ -20,13 +20,14 @@ export function ServicesSection() {
                         <CrossHatch className="absolute top-0 right-0 w-24 h-24 text-ink opacity-50" />
                         <div className="relative z-10">
                             <Zap size={32} className="mb-4" />
-                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3">Ship a Product</h3>
+                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3">Web App Development</h3>
                             <p className="font-mono text-sm opacity-85 leading-relaxed mb-4">
-                                End-to-end builds for solo founders and small teams — iOS, web, or both.
-                                You describe the thing; I return a live product on a tight timeline.
+                                Aplikasi web enterprise end-to-end — Laravel + Vue 3 / React 18 +
+                                Inertia.js. ERP, portal, sistem manajemen, dengan role &amp; permission
+                                granular, service layer, dan queue jobs.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["Web App", "iOS", "API", "DB"].map((t) => (
+                                {["Laravel", "Vue 3", "React 18", "Inertia.js"].map((t) => (
                                     <span key={t} className="px-2 py-1 border-2 border-ink/40 font-mono text-xs font-bold uppercase">{t}</span>
                                 ))}
                             </div>
@@ -40,14 +41,15 @@ export function ServicesSection() {
                     <div className="neo-card bg-electric text-cream p-6 md:p-8 h-full relative overflow-hidden group gradient-top-accent neo-glow-blue">
                         <CircuitPattern className="absolute bottom-0 left-0 w-32 h-32 text-cream/10" />
                         <div className="relative z-10">
-                            <Bot size={32} className="mb-4 text-acid" />
-                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3">AI Integration</h3>
+                            <Cpu size={32} className="mb-4 text-acid" />
+                            <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-3">Integration &amp; IoT</h3>
                             <p className="font-mono text-sm opacity-85 leading-relaxed mb-4">
-                                LLM workflows, custom agents, and RAG pipelines — designed to do one
-                                job well inside an existing product, not tacked on as a demo.
+                                Integrasi hardware (PLC/HMI via MQTT), API pihak ketiga (Accurate.id,
+                                OAuth 2.0), WebSocket realtime, dan deployment Docker multi-VM dengan
+                                security hardening.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["LLMs", "Agents", "RAG", "Fine-tune"].map((t) => (
+                                {["MQTT", "REST API", "Docker", "Security"].map((t) => (
                                     <span key={t} className="px-2 py-1 border-2 border-cream/40 font-mono text-xs font-bold uppercase">{t}</span>
                                 ))}
                             </div>

@@ -8,14 +8,14 @@ export function PhilosophySection() {
                     <div>
                         <div className="font-mono text-xs font-bold uppercase tracking-[0.3em] text-cream/70 mb-3">How I Work</div>
                         <h2 className="font-heading font-bold text-3xl md:text-5xl uppercase tracking-tight text-cream mb-6 leading-tight">
-                            Small team,<br />
-                            clear loop,<br />
-                            <span className="text-vivid">real commits.</span>
+                            Clear specs,<br />
+                            clean code,<br />
+                            <span className="text-vivid">real deployment.</span>
                         </h2>
                         <p className="font-mono text-sm md:text-base text-cream/85 leading-relaxed mb-6">
-                            I work the way a solo founder works: one person in the code, a direct
-                            line for questions, and a running build you can click on any time.
-                            No Jira theatre, no handoffs, no scope creep wrapped as process.
+                            Saya bekerja dengan loop yang jelas: requirement yang rinci, arsitektur
+                            yang dipikirkan matang, dan deployment yang benar-benar jalan di produksi.
+                            Bukan demo staging, bukan slide — sistem yang dipakai operasional harian.
                         </p>
                         <div className="inline-flex items-center gap-3 p-4 border-[3px] border-cream/20">
                             <div className="w-3 h-3 bg-acid animate-pulse-dot flex-shrink-0" />
@@ -24,10 +24,10 @@ export function PhilosophySection() {
                     </div>
                     <div className="space-y-4">
                         {[
-                            { num: "01", title: "Brief", desc: "30-minute call to understand the product, users, constraints, and deadline." },
-                            { num: "02", title: "Build", desc: "Heads-down engineering. Public repo from day one; you see every commit." },
-                            { num: "03", title: "Ship", desc: "Production deploy, real users, real feedback — not a staging demo." },
-                            { num: "04", title: "Support", desc: "Stay on-call for tweaks and bug fixes after launch. No ghosting." },
+                            { num: "01", title: "Spec", desc: "Diskusi requirement, arsitektur, dan constraint teknis. Modul bisnis dipetakan jelas sebelum kode ditulis." },
+                            { num: "02", title: "Build", desc: "Engineering dengan Laravel + Vue/React + Inertia.js. Role & permission, service layer, queue jobs sesuai kebutuhan." },
+                            { num: "03", title: "Deploy", desc: "Docker multi-VM, Nginx, deploy.sh automasi, security hardening. Produksi, bukan staging." },
+                            { num: "04", title: "Support", desc: "On-call untuk bug fix, tweak, dan rekonsiliasi data setelah go-live. Tidak ghosting." },
                         ].map((step, idx) => (
                             <div
                                 key={step.num}

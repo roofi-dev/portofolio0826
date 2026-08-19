@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/lib/projects";
 
-const SITE_URL = "https://hatimelhassak.is-a.dev";
+const SITE_URL = "https://roofi.dev";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const now = new Date();

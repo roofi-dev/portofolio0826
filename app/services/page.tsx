@@ -31,9 +31,9 @@ export default function ServicesPage() {
                         Services
                     </h1>
                     <p className="font-mono text-sm md:text-base text-ink/85 max-w-xl leading-relaxed">
-                        One engineer, not an agency. Two shapes of engagement depending on
-                        whether you&apos;re starting from zero or adding AI to something that
-                        already ships.
+                        Satu developer, bukan agency. Dua bentuk engagement tergantung apakah
+                        Anda mulai dari nol atau menambah integrasi IoT/API ke sistem yang
+                        sudah berjalan.
                     </p>
                 </motion.div>
             </section>

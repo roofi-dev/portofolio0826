@@ -1,13 +1,13 @@
 "use client";
 
 const comparisonData = [
-    { feature: "Delivery shape", agency: "4–8 weeks", me: "Days to a few weeks, scope-dependent" },
-    { feature: "Who does the work", agency: "Whoever's billable", me: "Me, personally, every commit" },
-    { feature: "Communication", agency: "Via an account manager", me: "Direct: Slack, email, or a call" },
-    { feature: "Stack decisions", agency: "Their standard kit", me: "Right tool for this project" },
-    { feature: "Post-launch support", agency: "Billed separately", me: "Included in the engagement" },
-    { feature: "AI capabilities", agency: "Subcontracted", me: "In-house, from scratch" },
-    { feature: "Overhead", agency: "High (management layer)", me: "None — no middleware" },
+    { feature: "Delivery shape", agency: "4–8 minggu + overhead", me: "Hari hingga beberapa minggu, scope-dependent" },
+    { feature: "Siapa kerjakan", agency: "Siapa yang billable", me: "Saya pribadi, setiap commit" },
+    { feature: "Komunikasi", agency: "Lewat account manager", me: "Langsung: WhatsApp, email, atau call" },
+    { feature: "Stack decisions", agency: "Standard kit agency", me: "Tool yang pas untuk proyek ini" },
+    { feature: "Post-launch support", agency: "Ditagih terpisah", me: "Termasuk dalam engagement" },
+    { feature: "Hardware/IoT", agency: "Subcontracted", me: "In-house — MQTT, PLC/HMI, WebSocket" },
+    { feature: "Overhead", agency: "Tinggi (layer manajemen)", me: "Nol — tidak ada middleware" },
 ];
 
 export function ComparisonSection() {
@@ -24,7 +24,7 @@ export function ComparisonSection() {
                         Typical Agency
                     </div>
                     <div className="p-4 font-mono text-xs font-bold uppercase tracking-wider text-center text-acid">
-                        Hatim
+                        Roofi
                     </div>
                 </div>
 

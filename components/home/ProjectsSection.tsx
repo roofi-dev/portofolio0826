@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
 import { CircuitPattern } from "@/components/ui/Decorative";
-import { ArrowUpRight, Smartphone, Activity, Globe, Wrench, Code2 } from "lucide-react";
+import { ArrowUpRight, Building2, Activity, Globe, Wrench, Code2 } from "lucide-react";
 import { projects, divisions, getProjectsByDivision } from "@/lib/projects";
 
 /* Stable (non-random) bar heights so SSR and hydration match */
@@ -36,41 +35,37 @@ export function ProjectsSection() {
             </div>
 
             <BentoGrid className="md:auto-rows-[18rem] gap-5">
-                {/* 01 · Apps — flagship division, real App Store screenshot */}
+                {/* 01 · Enterprise Systems — flagship division */}
                 <BentoGridItem
                     index={0}
                     className="md:col-span-2 md:row-span-2"
-                    title={`01 / Apps · ${apps.length}`}
+                    title={`01 / Enterprise · ${apps.length}`}
                     description={divisionNames("apps", 6)}
                     bgColor="bg-acid"
                     textColor="text-ink"
-                    icon={<Smartphone size={36} className="text-ink" />}
+                    icon={<Building2 size={36} className="text-ink" />}
                     href="/work#apps"
                     mediaHeader
                     header={
                         <div className="absolute inset-0 pointer-events-none">
                             <span className="absolute left-6 top-6 text-[5rem] md:text-[9rem] font-heading font-bold tracking-tighter text-ink/10 leading-none select-none">
-                                APPS
+                                ERP
                             </span>
-                            <div className="absolute right-6 md:right-12 top-8 bottom-24 w-[38%] max-w-[240px] border-[3px] border-ink shadow-neo overflow-hidden bg-ink hidden sm:block">
-                                <Image
-                                    src="/projects/tryit-1.jpg"
-                                    alt="TryIt on the App Store"
-                                    fill
-                                    className="object-cover object-top"
-                                    sizes="240px"
-                                    loading="lazy"
-                                />
+                            <div className="absolute right-6 md:right-12 bottom-24 left-6 font-mono text-xs md:text-sm font-bold text-ink/40 leading-relaxed hidden sm:block">
+                                <p>&gt; Produksi · QAQC · HRGA · PRF/RAB</p>
+                                <p>&gt; 15+ modules · Spatie RBAC</p>
+                                <p>&gt; MQTT timbangan · WebSocket</p>
+                                <p>&gt; Multi-VM Docker · deploy.sh</p>
                             </div>
                         </div>
                     }
                 />
 
-                {/* 02 · AI & Systems — tall, terminal aesthetic */}
+                {/* 02 · IoT & Integrations — tall, terminal aesthetic */}
                 <BentoGridItem
                     index={1}
                     className="md:col-span-1 md:row-span-2"
-                    title={`02 / AI & Systems · ${systems.length}`}
+                    title={`02 / IoT & Integrations · ${systems.length}`}
                     description={divisionNames("systems", 4)}
                     bgColor="bg-electric"
                     textColor="text-cream"
@@ -78,47 +73,44 @@ export function ProjectsSection() {
                     href="/work#systems"
                     header={
                         <div className="h-full flex flex-col justify-center space-y-3 font-mono text-sm font-bold pl-3 border-l-[3px] border-cream/40 ml-4 mt-4">
-                            <p className="text-cream/85">&gt; Webhook ingested.</p>
-                            <p className="text-cream/85">&gt; Anomaly detected.</p>
-                            <p className="text-cream/85">&gt; Appointment booked.</p>
-                            <p className="text-cream/85">&gt; Slack notified.</p>
+                            <p className="text-cream/85">&gt; MQTT message received.</p>
+                            <p className="text-cream/85">&gt; Timbangan online.</p>
+                            <p className="text-cream/85">&gt; WebSocket broadcast.</p>
+                            <p className="text-cream/85">&gt; Accurate.id synced.</p>
                             <p className="text-cream animate-blink">_</p>
                         </div>
                     }
                 />
 
-                {/* 03 · Client Web — real client-site capture */}
+                {/* 03 · Freelance Builds */}
                 <BentoGridItem
                     index={2}
                     className="md:col-span-1"
-                    title={`03 / Client Web · ${client.length}`}
+                    title={`03 / Freelance · ${client.length}`}
                     description={divisionNames("client", 3)}
                     bgColor="bg-hotpink"
                     textColor="text-cream"
                     icon={<Globe size={28} className="text-cream" />}
                     href="/work#client"
-                    mediaHeader
                     header={
                         <div className="absolute inset-0 pointer-events-none">
-                            <Image
-                                src="/projects/nota-parfum.jpg"
-                                alt="Nota Parfum — client site"
-                                fill
-                                className="object-cover object-top"
-                                sizes="(max-width: 768px) 100vw, 33vw"
-                                loading="lazy"
-                            />
-                            {/* scrim so the tile text stays legible over the capture */}
-                            <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-hotpink via-hotpink/80 to-transparent" />
+                            <span className="absolute left-5 top-5 text-[3.5rem] md:text-[5rem] font-heading font-bold tracking-tighter text-cream/15 leading-none select-none">
+                                NPK
+                            </span>
+                            <div className="absolute bottom-20 left-5 right-5 font-mono text-xs font-bold text-cream/50 leading-relaxed">
+                                <p>&gt; 3 kategori pupuk</p>
+                                <p>&gt; HPP · Neraca Massa</p>
+                                <p>&gt; 16+ Artisan Commands</p>
+                            </div>
                         </div>
                     }
                 />
 
-                {/* 04 · Tools & Play */}
+                {/* 04 · DevOps & Automation */}
                 <BentoGridItem
                     index={3}
                     className="md:col-span-1"
-                    title={`04 / Tools & Play · ${tools.length}`}
+                    title={`04 / DevOps · ${tools.length}`}
                     description={divisionNames("tools", 3)}
                     bgColor="bg-vivid"
                     textColor="text-cream"

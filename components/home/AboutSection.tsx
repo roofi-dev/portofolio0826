@@ -13,7 +13,7 @@ export function AboutSection() {
                         dependency on the image-optimizer service */}
                     <Image
                         src="/headshot.png"
-                        alt="Hatim El Hassak"
+                        alt="Firdha Roofi Irawan"
                         fill
                         className="object-cover object-center"
                         sizes="(max-width: 768px) 100vw, 40vw"
@@ -21,7 +21,7 @@ export function AboutSection() {
                         unoptimized
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 to-transparent p-6">
-                        <div className="font-mono text-xs font-bold text-cream tracking-widest uppercase">Remote worldwide · Every time zone</div>
+                        <div className="font-mono text-xs font-bold text-cream tracking-widest uppercase">Surabaya, Indonesia · Available remotely</div>
                     </div>
                     <div className="absolute top-3 right-3 w-8 h-8 border-[3px] border-ink bg-acid animate-spin-slow" />
                 </div>
@@ -31,28 +31,30 @@ export function AboutSection() {
                     <div className="relative z-10">
                         <div className="font-mono text-xs font-bold uppercase tracking-[0.3em] text-ink/60 mb-3">About</div>
                         <h2 className="font-heading font-bold text-3xl md:text-4xl uppercase tracking-tight text-ink mb-6 leading-tight">
-                            End-to-end<br />product engineer
+                            Fullstack<br />web developer
                         </h2>
                         <p className="font-mono text-sm md:text-base text-ink/85 leading-relaxed mb-4">
-                            Three continents, one craft. Years of building products —
-                            native iOS in Swift, web apps in Next.js, AI pipelines in Python —
-                            most of them shipped for solo founders and small teams who needed a
-                            full-stack engineer, not a committee.
+                            Fullstack Web Developer berpengalalan merancang, mengembangkan, dan
+                            men-deploy aplikasi web enterprise skala menengah hingga besar. Keahlian
+                            utama pada ekosistem PHP (Laravel 10/11) dan JavaScript (Vue 3, React 18,
+                            Inertia.js) — dengan transisi internal dari IT Infrastructure ke Fullstack
+                            Web Developer yang terbukti sukses.
                         </p>
                         <p className="font-mono text-sm md:text-base text-ink/85 leading-relaxed">
-                            I own the whole loop: design choices, architecture, shipping,
-                            and staying on-call after launch. I speak English, French, Arabic,
-                            and Mandarin, which helps when the client&apos;s not in my time zone.
+                            Berpengalaman mengintegrasikan hardware (PLC/HMI via MQTT), sistem
+                            akuntansi pihak ketiga (Accurate.id API), serta mengelola deployment
+                            berbasis Docker, multi-VM, dan security hardening. Berbasis di Surabaya,
+                            melayani proyek remote maupun on-site.
                         </p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-6 pt-4 border-t-[3px] border-ink/10 relative z-10">
-                        <a href="https://github.com/hatimhtm" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-acid hover:text-ink flex items-center gap-2">
+                        <a href="https://github.com/roofi-dev" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-acid hover:text-ink flex items-center gap-2">
                             <Github size={14} /> GitHub
                         </a>
-                        <a href="https://www.linkedin.com/in/hatim-elhassak/" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-electric hover:text-cream flex items-center gap-2">
+                        <a href="https://www.linkedin.com/in/roofi" target="_blank" rel="noopener noreferrer" className="neo-pill bg-ink text-cream hover:bg-electric hover:text-cream flex items-center gap-2">
                             <Linkedin size={14} /> LinkedIn
                         </a>
-                        <a href="mailto:hatimelhassak.official@gmail.com" className="neo-pill bg-ink text-cream hover:bg-vivid hover:text-cream flex items-center gap-2">
+                        <a href="mailto:roofiii96@gmail.com" className="neo-pill bg-ink text-cream hover:bg-vivid hover:text-cream flex items-center gap-2">
                             <Mail size={14} /> Email
                         </a>
                     </div>

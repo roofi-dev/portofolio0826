@@ -1,10 +1,12 @@
 const techLogos = [
-    "Next.js", "TypeScript", "SwiftUI", "Swift",
-    "Python", "Node.js", "FastAPI",
-    "PostgreSQL", "Supabase", "Redis",
-    "OpenAI", "Gemini", "Claude", "LangChain",
-    "Playwright", "Docker", "Tailwind",
-    "Framer Motion", "GSAP", "Astro", "Vite",
+    "Laravel 10/11", "PHP", "Vue 3", "React 18",
+    "Inertia.js", "Livewire 3", "JavaScript ES6+",
+    "TailwindCSS", "shadcn/ui", "Vite", "Chart.js",
+    "MySQL 8.0", "PostgreSQL", "Spatie",
+    "Laravel Reverb", "MQTT", "Mosquitto",
+    "Accurate.id API", "OAuth 2.0", "Queue Jobs",
+    "Docker", "docker-compose", "Nginx", "Ubuntu Server",
+    "PHPUnit", "Git", "Postman",
 ];
 
 export function TechLogoMarquee() {

@@ -121,10 +121,10 @@ export default function WorkPage() {
                         Selected<br />Work
                     </h1>
                     <p className="font-mono text-sm md:text-base text-ink/85 max-w-xl leading-relaxed mb-8">
-                        {projects.length} shipped projects across four divisions. Every one was built
-                        for a real user or client. Code is open where I could make it open;
-                        private client work is described without the repo. Click any card for
-                        the full case study.
+                        {projects.length} sistem yang shipped di empat divisi. Semua dibangun untuk
+                        pengguna atau client nyata. Sebagian besar internal enterprise (private repo),
+                        freelance commission dideskripsikan tanpa repo. Klik kartu mana pun untuk
+                        case study lengkap.
                     </p>
 
                     {/* Division index */}
@@ -187,15 +187,16 @@ export default function WorkPage() {
                     <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
                         <div>
                             <h3 className="font-heading font-bold text-2xl md:text-3xl uppercase tracking-tight mb-2">
-                                See the source
+                                Lihat source
                             </h3>
                             <p className="font-mono text-sm text-cream/80 max-w-md leading-relaxed">
-                                Most of these repos are public. Fork them, read them, or hire me to build
-                                something like them for you.
+                                Sebagian besar repo internal bersifat private (enterprise). Repo publik
+                                ada di GitHub — fork, baca, atau hire saya untuk membangun sesuatu
+                                yang serupa.
                             </p>
                         </div>
                         <a
-                            href="https://github.com/hatimhtm"
+                            href="https://github.com/roofi-dev"
                             target="_blank" rel="noopener noreferrer"
                             className="neo-card bg-cream text-ink px-6 py-3 font-heading font-bold text-sm uppercase tracking-wider flex items-center gap-2 hover:bg-acid transition-colors group flex-shrink-0"
                         >

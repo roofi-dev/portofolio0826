@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const commands = [
-    { prompt: "$ tryit · App Store review", result: "✓ Cleared 2.1 + 2.1(a)", delay: 0 },
-    { prompt: "$ relay · sparkle appcast", result: "✓ v1.0.7 signed · Intel + AS", delay: 450 },
-    { prompt: "$ viralos · cron daily", result: "✓ ASC sync · RC snapshot · alerts", delay: 900 },
-    { prompt: "$ fortress · pip install", result: "✓ Published to PyPI", delay: 1350 },
+    { prompt: "$ pondasi · php artisan serve", result: "✓ Laravel 10 + Vue 3 + Inertia.js running", delay: 0 },
+    { prompt: "$ mqtt · mosquitto_sub -t timbangan", result: "✓ PLC/HMI bridge · WebSocket broadcast", delay: 450 },
+    { prompt: "$ accurate · oauth2 sync", result: "✓ 2-way · idempotency guard · queue jobs", delay: 900 },
+    { prompt: "$ deploy.sh · docker-compose up", result: "✓ Multi-VM · Nginx · zero downtime", delay: 1350 },
 ];
 
 export default function LiveTerminal() {
@@ -53,7 +53,7 @@ export default function LiveTerminal() {
                 <div className="w-2.5 h-2.5 bg-hotpink" />
                 <div className="w-2.5 h-2.5 bg-acid" />
                 <div className="w-2.5 h-2.5 bg-electric" />
-                <span className="ml-2 text-cream/70 text-xs uppercase tracking-widest">lord_decay@arsenal</span>
+                <span className="ml-2 text-cream/70 text-xs uppercase tracking-widest">roofi@pondasi</span>
             </div>
 
             {/* Lines */}

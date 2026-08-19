@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { projectCount } from "@/lib/projects";
 
 export const runtime = "edge";
-export const alt = "Hatim El Hassak — Full-Stack Engineer";
+export const alt = "Firdha Roofi Irawan — Fullstack Web Developer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -69,9 +69,9 @@ export default function OpengraphImage() {
                             flexDirection: "column",
                         }}
                     >
-                        <span>Hatim</span>
+                        <span>Firdha</span>
                         <span style={{ display: "flex", alignItems: "flex-start", gap: 16 }}>
-                            <span>El Hassak</span>
+                            <span>Roofi</span>
                             <span
                                 style={{
                                     width: 34,
@@ -95,7 +95,7 @@ export default function OpengraphImage() {
                             display: "flex",
                         }}
                     >
-                        Full-stack engineer — iOS, macOS, web, and AI pipelines, end-to-end.
+                        Fullstack Web Developer — PHP (Laravel) &amp; JavaScript (Vue 3 / React 18), end-to-end.
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@ export default function OpengraphImage() {
                     }}
                 >
                     <div style={{ display: "flex", gap: 16 }}>
-                        {["Apps", "AI & Systems", "Client Web", `${projectCount} Shipped`].map((t) => (
+                        {["Enterprise", "IoT & Integrations", "Freelance", `${projectCount} Shipped`].map((t) => (
                             <div
                                 key={t}
                                 style={{
@@ -134,7 +134,7 @@ export default function OpengraphImage() {
                             display: "flex",
                         }}
                     >
-                        hatimelhassak.is-a.dev
+                        roofi.dev
                     </div>
                 </div>
             </div>

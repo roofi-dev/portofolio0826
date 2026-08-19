@@ -71,7 +71,7 @@ export function ContactForm() {
                         <a href="/work" className="neo-card bg-ink text-cream px-4 py-2 font-mono text-sm font-bold uppercase">
                             View Work
                         </a>
-                        <a href="https://github.com/hatimhtm" target="_blank" rel="noopener noreferrer" className="neo-card bg-ink text-cream px-4 py-2 font-mono text-sm font-bold uppercase flex items-center gap-2">
+                        <a href="https://github.com/roofi-dev" target="_blank" rel="noopener noreferrer" className="neo-card bg-ink text-cream px-4 py-2 font-mono text-sm font-bold uppercase flex items-center gap-2">
                             <Github size={14} /> GitHub
                         </a>
                     </div>
@@ -97,7 +97,7 @@ export function ContactForm() {
                             </div>
                         </div>
                         <a
-                            href="mailto:hatimelhassak.official@gmail.com?subject=New%20project%20enquiry"
+                            href="mailto:roofiii96@gmail.com?subject=New%20project%20enquiry"
                             className="inline-flex items-center gap-2 bg-ink text-cream px-4 py-2.5 font-heading font-bold text-sm uppercase tracking-wider hover:bg-acid hover:text-ink transition-colors flex-shrink-0"
                         >
                             <Mail size={16} /> Email Direct

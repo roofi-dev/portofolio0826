@@ -32,19 +32,19 @@ const pacifico = Pacifico({
     weight: "400",
 });
 
-const SITE_URL = "https://hatimelhassak.is-a.dev";
+const SITE_URL = "https://roofi.dev";
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
     title: {
-        default: "Hatim El Hassak — Full-Stack Engineer",
-        template: "%s · Hatim El Hassak",
+        default: "Firdha Roofi Irawan — Fullstack Web Developer",
+        template: "%s · Firdha Roofi Irawan",
     },
     description:
-        "Hatim El Hassak — full-stack engineer. iOS + macOS (SwiftUI), web (Next.js), AI pipelines (Python). End-to-end product builds for solo founders and small teams. Remote worldwide.",
-    keywords: ["full-stack engineer", "iOS developer", "SwiftUI", "Next.js", "AI engineer", "freelance engineer", "Hatim El Hassak"],
-    authors: [{ name: "Hatim El Hassak", url: SITE_URL }],
-    creator: "Hatim El Hassak",
+        "Firdha Roofi Irawan — Fullstack Web Developer. PHP (Laravel 10/11) & JavaScript (Vue 3, React 18, Inertia.js). Enterprise ERP, IoT/Hardware integration (MQTT), Accurate.id API, Docker multi-VM deployment. Surabaya, Indonesia.",
+    keywords: ["fullstack web developer", "Laravel developer", "Vue 3", "React 18", "Inertia.js", "PHP developer", "MQTT", "Docker", "Surabaya", "Firdha Roofi Irawan"],
+    authors: [{ name: "Firdha Roofi Irawan", url: SITE_URL }],
+    creator: "Firdha Roofi Irawan",
     alternates: {
         canonical: "/",
     },
@@ -54,16 +54,16 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         url: SITE_URL,
-        siteName: "Hatim El Hassak",
-        title: "Hatim El Hassak — Full-Stack Engineer",
+        siteName: "Firdha Roofi Irawan",
+        title: "Firdha Roofi Irawan — Fullstack Web Developer",
         description:
-            "End-to-end iOS, web, and AI builds for solo founders and small teams. iOS, SwiftUI, Next.js, Python.",
+            "Fullstack Web Developer — PHP (Laravel) & JavaScript (Vue 3 / React 18). Enterprise ERP, IoT integration, API integrations, Docker deployment. Surabaya, Indonesia.",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hatim El Hassak — Full-Stack Engineer",
+        title: "Firdha Roofi Irawan — Fullstack Web Developer",
         description:
-            "End-to-end iOS, web, and AI builds for solo founders and small teams.",
+            "Fullstack Web Developer — PHP (Laravel) & JavaScript (Vue 3 / React 18). Surabaya, Indonesia.",
     },
     robots: {
         index: true,

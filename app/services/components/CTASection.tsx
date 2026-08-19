@@ -10,17 +10,17 @@ export function CTASection() {
                 <div className="absolute top-0 left-1/4 w-1/2 h-20 bg-acid/10 blur-3xl pointer-events-none" />
                 <div className="relative z-10">
                     <h2 className="font-heading font-bold text-3xl md:text-5xl uppercase tracking-tight mb-4">
-                        Think this is the<br /><span className="gradient-text-acid">right fit?</span>
+                        Cocok untuk<br /><span className="gradient-text-acid">proyek Anda?</span>
                     </h2>
                     <p className="font-mono text-sm text-cream/85 max-w-lg mx-auto mb-8 leading-relaxed">
-                        Send me a brief of what you&apos;re building — current state, target,
-                        any deadline. I&apos;ll reply with a plan and a realistic price.
+                        Kirim brief apa yang sedang dibangun — kondisi saat ini, target,
+                        deadline. Saya balas dengan rencana dan harga realistis.
                     </p>
                     <a
                         href="/contact"
                         className="inline-block bg-acid text-ink font-heading font-bold text-lg uppercase tracking-wider px-8 py-4 border-[3px] border-ink shadow-neo hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all"
                     >
-                        Book a Call →
+                        Mulai Proyek →
                     </a>
                 </div>
             </div>

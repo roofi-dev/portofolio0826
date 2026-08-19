@@ -1,70 +1,63 @@
 "use client";
 
-import { ArrowUpRight, Apple, Package, Github, Globe, Boxes } from "lucide-react";
+import { ArrowUpRight, Building2, Cpu, Globe, Github, ShieldCheck, Database } from "lucide-react";
 import { projects, clientWorkCount } from "@/lib/projects";
 
 /* Every item below is independently verifiable by clicking it —
    evidence instead of testimonials. */
 const receipts = [
     {
-        icon: <Apple size={18} />,
-        label: "TryIt",
-        value: "Live on the App Store",
-        href: "https://apps.apple.com/app/id6761598749",
+        icon: <Building2 size={18} />,
+        label: "Pondasi · 15+ modules",
+        value: "Internal manufacturing ERP · in production",
+        href: "/work/pondasi",
         accent: "bg-acid",
     },
     {
-        icon: <Apple size={18} />,
-        label: "GoPilates",
-        value: "Live on the App Store",
-        href: "https://apps.apple.com/us/app/gopilates-app/id6760300479",
+        icon: <ShieldCheck size={18} />,
+        label: "Karir · Security 8.5/10",
+        value: "Audit-ready · CSRF · XSS · SQLi prevention",
+        href: "/work/karir",
         accent: "bg-hotpink",
     },
     {
-        icon: <Apple size={18} />,
-        label: "Sunz",
-        value: "Live on the App Store",
-        href: "https://apps.apple.com/us/app/sunz-bronzage/id6771540928",
-        accent: "bg-vivid",
-    },
-    {
-        icon: <Package size={18} />,
-        label: "Relay v1.0.7",
-        value: "Shipped · signed Sparkle updates",
-        href: "https://github.com/hatimhtm/Relay/releases/latest",
+        icon: <Cpu size={18} />,
+        label: "MQTT Timbangan IoT",
+        value: "PLC/HMI → Mosquitto → WebSocket realtime",
+        href: "/work/mqtt-timbangan-iot",
         accent: "bg-electric",
     },
     {
-        icon: <Package size={18} />,
-        label: "Fader v1.2 · Deck v1.1.6 · Eli",
-        value: "Native macOS · public releases",
-        href: "https://github.com/hatimhtm?tab=repositories",
+        icon: <Database size={18} />,
+        label: "Accurate.id API",
+        value: "2-way sync · OAuth 2.0 · idempotency guard",
+        href: "/work/accurate-id-integration",
         accent: "bg-vivid",
     },
     {
-        icon: <Boxes size={18} />,
-        label: "Fortress",
-        value: "pip install fortress · PyPI",
-        href: "https://pypi.org/project/fortress/",
-        accent: "bg-acid",
-    },
-    {
         icon: <Globe size={18} />,
-        label: `${clientWorkCount} client builds`,
-        value: "Shipped for real clients · live links",
-        href: "/work#client",
+        label: `${clientWorkCount} freelance build`,
+        value: "Inventory & Production · shipped for client",
+        href: "/work/inventory-production",
         accent: "bg-hotpink",
     },
     {
         icon: <Github size={18} />,
-        label: "The commits",
-        value: "Most of it public — read the source",
-        href: "https://github.com/hatimhtm",
+        label: "GitHub · roofi-dev",
+        value: "Source repos · public commits",
+        href: "https://github.com/roofi-dev",
         accent: "bg-electric",
     },
     {
-        icon: <Boxes size={18} />,
-        label: `${projects.length} shipped projects`,
+        icon: <Building2 size={18} />,
+        label: "PT Ladang Sehat Indonesia",
+        value: "Fullstack Web Developer · Jan 2025 – present",
+        href: "https://www.linkedin.com/in/roofi",
+        accent: "bg-acid",
+    },
+    {
+        icon: <Database size={18} />,
+        label: `${projects.length} systems shipped`,
         value: "Every one documented as a case study",
         href: "/work",
         accent: "bg-vivid",

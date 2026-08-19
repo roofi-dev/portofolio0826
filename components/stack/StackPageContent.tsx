@@ -17,63 +17,67 @@ const depthLabel: Record<Depth, string> = {
 
 export const categories: Category[] = [
     {
-        name: "Frontend",
+        name: "Backend",
         color: "bg-acid",
         textColor: "text-ink",
         tools: [
-            { name: "Next.js / React", depth: "daily", detail: "App Router, RSC, Server Actions — the default for every web-app build." },
-            { name: "TypeScript", depth: "daily", detail: "Strict mode across every project. The type system is part of the design." },
-            { name: "Tailwind CSS", depth: "daily", detail: "Utility-first with a custom design system layered on top." },
-            { name: "Framer Motion", depth: "frequent", detail: "For motion systems where I want physics, not just easing curves." },
-            { name: "SwiftUI", depth: "daily", detail: "Native iOS + macOS. Liquid Glass, SwiftData, Live Activities, menu-bar apps, Core Audio." },
-            { name: "GSAP", depth: "frequent", detail: "When a marketing site needs scroll-driven choreography, not just reveals." },
-            { name: "Astro", depth: "frequent", detail: "Static editorial sites — three shipped client/studio builds on Astro 5." },
+            { name: "Laravel 10/11", depth: "daily", detail: "Framework utama untuk semua build enterprise. Eloquent, Service Layer, Queue Jobs, Reverb (WebSocket)." },
+            { name: "PHP", depth: "daily", detail: "Bahasa utama. Modern PHP 8.x dengan strict typing dan clean architecture." },
+            { name: "Livewire 3", depth: "frequent", detail: "Reaktivitas server-side untuk modul yang tidak butuh SPA full." },
+            { name: "Inertia.js", depth: "daily", detail: "Bridge Laravel ↔ Vue/React tanpa API layer terpisah — SPA tanpa API boilerplate." },
+            { name: "RESTful API (OpenAPI/Swagger)", depth: "frequent", detail: "API terstruktur untuk integrasi antar-sistem dan sinkronisasi data antar lokasi." },
+            { name: "PHPUnit", depth: "frequent", detail: "Testing untuk modul kritis — terutama modul approval dan kalkulasi HPP." },
+            { name: "Spatie Packages", depth: "daily", detail: "Role & permission granular, media library, activity log — backbone RBAC di Pondasi." },
         ],
     },
     {
-        name: "Backend",
+        name: "Frontend",
         color: "bg-electric",
         textColor: "text-cream",
         tools: [
-            { name: "Python", depth: "daily", detail: "FastAPI for APIs. Playwright for crawlers. Pandas where the data lives." },
-            { name: "Node.js", depth: "frequent", detail: "API routes, background workers, serverless functions." },
-            { name: "PostgreSQL", depth: "frequent", detail: "Relational data with deliberate schema design, not auto-generated blobs." },
-            { name: "Supabase", depth: "daily", detail: "Postgres + Auth + Storage + Edge Functions — default BaaS for small teams." },
-            { name: "Redis", depth: "proficient", detail: "Caching, queues, rate limits, session storage." },
-            { name: "Docker", depth: "frequent", detail: "For pipelines that need to run the same on my laptop and in CI." },
+            { name: "Vue 3 (Composition API)", depth: "daily", detail: "Default frontend untuk build Laravel. Composition API, Pinia, modular components." },
+            { name: "React 18", depth: "frequent", detail: "Untuk freelance build yang client-nya sudah on React (Inventory & Production)." },
+            { name: "JavaScript (ES6+)", depth: "daily", detail: "Modern JS — async/await, modules, destructuring. Dasar semua interaksi frontend." },
+            { name: "TailwindCSS", depth: "daily", detail: "Utility-first untuk semua UI. Konsisten di seluruh modul ERP." },
+            { name: "shadcn/ui (Radix Vue)", depth: "frequent", detail: "Komponen accessible untuk form dan dialog kompleks." },
+            { name: "Chart.js", depth: "frequent", detail: "Visualisasi data produksi, neraca massa, dan KPI dashboard." },
+            { name: "Vite", depth: "daily", detail: "Bundler dev server — fast HMR untuk Laravel + Vue workflow." },
+            { name: "Axios", depth: "daily", detail: "HTTP client untuk API calls dan integrasi pihak ketiga." },
         ],
     },
     {
-        name: "AI / ML",
+        name: "Hardware / IoT",
         color: "bg-hotpink",
         textColor: "text-cream",
         tools: [
-            { name: "OpenAI / GPT", depth: "daily", detail: "Prompt design, function calling, structured outputs, embeddings." },
-            { name: "Gemini 2.5 / 3", depth: "daily", detail: "Image gen, vision, and structured parsing — TryIt, Eli, Lumi, LeadSniper." },
-            { name: "Claude / Anthropic API", depth: "frequent", detail: "Closed-enum triage and agent workflows with drift-guarded prompts." },
-            { name: "LangChain", depth: "frequent", detail: "For agent loops and retry-aware chains — not for simple prompts." },
-            { name: "RAG pipelines", depth: "frequent", detail: "Vector search + retrieval over domain docs, not generic wrappers." },
-            { name: "Speech-to-Text", depth: "frequent", detail: "Google Cloud STT for non-English; Whisper for offline contexts." },
+            { name: "MQTT (Mosquitto Broker)", depth: "daily", detail: "Bridge PLC/HMI timbangan → sistem web. Publish/subscribe untuk data realtime." },
+            { name: "PLC/HMI Integration", depth: "daily", detail: "Integrasi langsung dengan perangkat pabrik — timbangan digital, sensor produksi." },
+            { name: "Laravel Reverb (WebSocket)", depth: "daily", detail: "Realtime monitoring produksi di frontend — push update tanpa polling." },
+            { name: "Accurate.id API", depth: "frequent", detail: "Integrasi 2 arah via OAuth 2.0 + Queue Jobs dengan idempotency guard." },
         ],
     },
     {
-        name: "Infra & DevOps",
+        name: "Database & DevOps",
         color: "bg-vivid",
         textColor: "text-cream",
         tools: [
-            { name: "Vercel", depth: "daily", detail: "Default host for Next.js work. Preview deploys on every PR." },
-            { name: "GitHub Actions", depth: "frequent", detail: "Tests, builds, and deploys — everything that shouldn't be manual." },
-            { name: "AWS / GCP", depth: "proficient", detail: "Used where the client already lives; not my default for greenfield." },
-            { name: "Playwright", depth: "daily", detail: "Headless browsers for scraping, e2e tests, and visual diff." },
+            { name: "MySQL 8.0", depth: "daily", detail: "Database utama. Schema design, indexing, query optimization untuk data produksi harian." },
+            { name: "PostgreSQL", depth: "proficient", detail: "Untuk proyek yang butuh fitur advanced (JSONB, window functions, full-text search)." },
+            { name: "Docker / docker-compose", depth: "daily", detail: "Multi-VM (1 VPS, 2 VM) dengan isolasi layanan. Same env dev ↔ prod." },
+            { name: "Nginx", depth: "frequent", detail: "Reverse proxy untuk routing antar layanan internal di Docker stack." },
+            { name: "Ubuntu Server", depth: "daily", detail: "OS server utama. SSH hardening, firewall, fail2ban, patching rutin." },
+            { name: "Automated Shell Scripting", depth: "daily", detail: "deploy.sh untuk zero-downtime update dan rekonsiliasi data stok." },
+            { name: "Git / GitHub", depth: "daily", detail: "Version control + CI workflow. Branching strategy untuk tim kecil." },
+            { name: "Postman", depth: "frequent", detail: "API testing dan dokumentasi untuk integrasi pihak ketiga." },
         ],
     },
 ];
 
 export const learning = [
-    { name: "Rust", reason: "Systems-level reach when Python is the bottleneck." },
-    { name: "Kubernetes", reason: "For stacks that outgrow a single-VM footprint." },
-    { name: "Three.js / WebGL", reason: "Real-time 3D on the web — product visualisations and interactive demos." },
-    { name: "Solidity", reason: "Smart contracts — selectively, where on-chain is genuinely the right fit." },
+    { name: "Kubernetes", reason: "Untuk stack yang outgrow single-VM Docker footprint — orchestration multi-container." },
+    { name: "Go", reason: "Performance-critical services dan microservices — terutama untuk MQTT broker custom." },
+    { name: "Redis", reason: "Caching layer dan queue backend untuk skala yang lebih besar dari MySQL-only." },
+    { name: "TypeScript", reason: "Strict typing untuk frontend Vue/React yang makin kompleks — migrasi gradual dari JS." },
 ];
 
 export function StatusBar() {
@@ -104,8 +108,9 @@ export function HeaderSection() {
                     The<br />Arsenal
                 </h1>
                 <p className="font-mono text-sm md:text-base text-ink/85 max-w-xl leading-relaxed">
-                    No percentages, no self-graded proficiency charts. These are the tools I
-                    reach for on real projects, organised by how often I actually use them.
+                    Tidak ada persentase atau chart proficiency self-graded. Ini tools yang
+                    saya pakai di proyek nyata, dikelompokkan berdasarkan seberapa sering
+                    dipakai.
                 </p>
             </motion.div>
         </section>
@@ -176,7 +181,7 @@ export function CurrentlyLearningSection() {
                 <Flame size={16} className="text-hotpink" />
                 <div className="font-mono text-xs font-bold uppercase tracking-[0.3em] text-ink/60">Level Up</div>
             </div>
-            <h2 className="font-heading font-bold text-3xl md:text-4xl uppercase tracking-tight text-ink mb-6">Currently Learning</h2>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl uppercase tracking-tight text-ink mb-6">Sedang Dipelajari</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
                 {learning.map((item, i) => (
@@ -202,11 +207,11 @@ export function CTASection() {
                 <GridDots className="absolute inset-0 w-full h-full text-cream/5" />
                 <div className="relative z-10">
                     <h2 className="font-heading font-bold text-3xl md:text-5xl uppercase tracking-tight mb-4">
-                        Need this stack<br /><span className="gradient-text-acid">on your team?</span>
+                        Butuh stack ini<br /><span className="gradient-text-acid">di tim Anda?</span>
                     </h2>
                     <p className="font-mono text-sm text-cream/80 max-w-lg mx-auto mb-8 leading-relaxed">
-                        Every tool here has been used on at least one shipped project.
-                        Let me put them to work on yours.
+                        Setiap tool di sini sudah dipakai di minimal satu proyek yang shipped.
+                        Mari saya kerjakan untuk Anda.
                     </p>
                     <a
                         href="/contact"

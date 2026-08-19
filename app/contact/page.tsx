@@ -4,23 +4,25 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ContactForm } from "@/components/contact/ContactForm";
 
 import { useState } from "react";
-import { ArrowUpRight, Mail, Send, Loader2, CheckCircle, MapPin, Clock, MessageCircle, Github, Linkedin, ChevronDown } from "lucide-react";
+import { ArrowUpRight, Mail, Send, Loader2, CheckCircle, MapPin, Clock, MessageCircle, Github, Linkedin, ChevronDown, Phone } from "lucide-react";
 import { CircuitPattern, GridDots, CrossHatch } from "@/components/ui/Decorative";
+
+const WHATSAPP_URL = "https://wa.me/628990913735";
 
 /* ─── Data ─── */
 const contactInfo = [
-    { icon: <Mail size={18} />, label: "Email", value: "hatimelhassak.official@gmail.com", href: "mailto:hatimelhassak.official@gmail.com" },
-    { icon: <MapPin size={18} />, label: "Location", value: "Remote worldwide" },
+    { icon: <Mail size={18} />, label: "Email", value: "roofiii96@gmail.com", href: "mailto:roofiii96@gmail.com" },
+    { icon: <Phone size={18} />, label: "WhatsApp", value: "0899 0913 735", href: WHATSAPP_URL },
+    { icon: <MapPin size={18} />, label: "Location", value: "Surabaya, Indonesia" },
     { icon: <Clock size={18} />, label: "Response", value: "Usually same day" },
-    { icon: <MessageCircle size={18} />, label: "Languages", value: "English, French, Arabic, Mandarin" },
 ];
 
 const faqs = [
-    { q: "What's a typical turnaround?", a: "It depends on scope — a focused MVP usually lands in a week or two; a larger full-stack app runs 3–6 weeks. I give you a realistic estimate before we start and flag any slip the moment it's on the horizon." },
-    { q: "Do you work with startups or established companies?", a: "Both. Most of my work is for solo founders and small teams, but I've also contracted with established businesses that needed a specific slice built fast. The process is the same either way." },
-    { q: "What do you specialise in?", a: "Product engineering end-to-end: Next.js for web, SwiftUI for iOS, Python for backend and AI pipelines. I pick tools that fit the project, not the trend cycle." },
-    { q: "Do you handle the whole thing, or just development?", a: "End-to-end — design direction, architecture, shipping, and post-launch support. If you have an existing designer or PM, I slot into their workflow; if you don't, I can run the whole loop." },
-    { q: "How do you handle existing codebases?", a: "Read-before-rewrite. I'll start by understanding the repo's conventions, then ship changes as small PRs you can review. No surprise rewrites without a conversation first." },
+    { q: "Berapa lama turnaround tipikal?", a: "Tergantung scope — modul ERP kecil biasanya 2–4 minggu; sistem fullstack skala enterprise 2–4 bulan. Saya kasih estimasi realistis sebelum mulai dan flagging segera kalau ada potensi slip." },
+    { q: "Bekerja dengan perusahaan atau freelance?", a: "Keduanya. Sebagian besar pekerjaan saya untuk perusahaan (PT Ladang Sehat Indonesia) dan beberapa freelance commission. Prosesnya sama — spec jelas, build rapi, deploy ke produksi." },
+    { q: "Spesialisasi teknis apa?", a: "Fullstack web development: PHP (Laravel 10/11) untuk backend, Vue 3 / React 18 + Inertia.js untuk frontend, MySQL/PostgreSQL untuk database, plus integrasi hardware (MQTT, PLC/HMI) dan API pihak ketiga (Accurate.id)." },
+    { q: "Handle end-to-end atau cuma development?", a: "End-to-end — arsitektur, development, deployment (Docker multi-VM), security hardening, dan post-launch support. Kalau sudah ada designer atau PM, saya slot ke workflow mereka." },
+    { q: "Bagaimana handle codebase yang sudah ada?", a: "Read-before-rewrite. Saya pahami konvensi repo dulu, lalu ship perubahan sebagai PR kecil yang bisa direview. Tidak ada rewrite kejutan tanpa diskusi." },
 ];
 
 export default function ContactPage() {
@@ -50,9 +52,9 @@ export default function ContactPage() {
                             Let&apos;s<br />Build
                         </h1>
                         <p className="font-mono text-sm md:text-base text-ink/85 max-w-xl leading-relaxed">
-                            Tell me what you&apos;re working on — current state, what you need built,
-                            and any deadline or constraint I should know about. I reply with a
-                            realistic plan, not a pitch deck.
+                            Ceritakan apa yang sedang Anda kerjakan — kondisi saat ini, apa yang
+                            perlu dibangun, dan deadline atau constraint yang perlu saya tahu.
+                            Saya balas dengan rencana realistis, bukan pitch deck.
                         </p>
                     </motion.div>
                 </section>
@@ -103,14 +105,14 @@ export default function ContactPage() {
                             className="grid grid-cols-2 gap-3"
                         >
                             <a
-                                href="https://github.com/hatimhtm"
+                                href="https://github.com/roofi-dev"
                                 target="_blank" rel="noopener noreferrer"
                                 className="neo-card bg-cream p-4 text-center font-mono text-sm font-bold uppercase hover:bg-ink hover:text-cream transition-all flex items-center justify-center gap-2 group"
                             >
                                 <Github size={16} /> GitHub
                             </a>
                             <a
-                                href="https://www.linkedin.com/in/hatim-elhassak/"
+                                href="https://www.linkedin.com/in/roofi"
                                 target="_blank" rel="noopener noreferrer"
                                 className="neo-card bg-cream p-4 text-center font-mono text-sm font-bold uppercase hover:bg-electric hover:text-cream transition-all flex items-center justify-center gap-2 group"
                             >
@@ -127,10 +129,10 @@ export default function ContactPage() {
                         >
                             <div className="font-heading font-bold text-lg uppercase tracking-tight mb-2">What to expect</div>
                             <ul className="font-mono text-xs opacity-85 leading-relaxed space-y-1.5 list-disc list-inside">
-                                <li>Reply within a working day</li>
-                                <li>A call only if the project warrants one</li>
-                                <li>A written plan with scope, timeline, and price</li>
-                                <li>No NDA gatekeeping before I understand the work</li>
+                                <li>Balas dalam satu hari kerja</li>
+                                <li>Call hanya kalau proyek memang perlu</li>
+                                <li>Rencana tertulis: scope, timeline, harga</li>
+                                <li>Tidak ada NDA gatekeeping sebelum paham scope</li>
                             </ul>
                         </motion.div>
                     </div>
