@@ -12,7 +12,7 @@ import MagneticButton from "@/components/ui/MagneticButton";
 import Link from "next/link";
 import { themeScript } from "@/lib/theme-script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 const spaceGrotesk = Space_Grotesk({
     subsets: ["latin"],
