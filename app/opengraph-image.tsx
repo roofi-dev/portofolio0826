@@ -82,6 +82,7 @@ export default function OpengraphImage() {
                                 }}
                             />
                         </span>
+                        <span>Irawan</span>
                     </div>
 
                     <div

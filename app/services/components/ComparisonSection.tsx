@@ -24,7 +24,7 @@ export function ComparisonSection() {
                         Typical Agency
                     </div>
                     <div className="p-4 font-mono text-xs font-bold uppercase tracking-wider text-center text-acid">
-                        Roofi
+                        Firdha Roofi Irawan
                     </div>
                 </div>
 

@@ -50,6 +50,8 @@ export function HeroSection() {
                                     Roofi
                                     <span className="absolute -right-2 -top-2 md:-right-5 md:-top-5 w-5 h-5 md:w-8 md:h-8 bg-acid border-[3px] border-ink animate-spin-slow" />
                                 </span>
+                                <br />
+                                <span className="relative inline-block">Irawan</span>
                             </h1>
                             <p className="font-mono text-sm md:text-lg text-ink/80 mt-6 max-w-xl leading-relaxed">
                                 Fullstack Web Developer. I build enterprise ERP systems, IoT/hardware
